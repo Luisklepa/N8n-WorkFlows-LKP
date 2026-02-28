@@ -1,8 +1,8 @@
-# Synaptek Workflows - Automatizaciones con n8n
+# N8N Workflows - Automatizaciones con n8n
 
 Colección de workflows de n8n para automatización de procesos empresariales, generación de contenido y análisis de trading.
 
-## 📋 Descripción General
+## Descripción General
 
 Este repositorio contiene 4 workflows de n8n diseñados para automatizar diferentes procesos:
 
@@ -11,9 +11,9 @@ Este repositorio contiene 4 workflows de n8n diseñados para automatizar diferen
 3. **Generador de Señales de Trading** - Sistema de alertas automáticas
 4. **Asistente de WhatsApp (SynapBot)** - CRM y atención automatizada de leads
 
-## 🚀 Workflows Incluidos
+##  Workflows Incluidos
 
-### 1. 🎬 Transform Podcasts into Viral TikTok Clips
+### 1. Transform Podcasts into Viral TikTok Clips
 **Archivo**: `workflows/podcast-to-tiktok.json`
 
 **Función**: Convierte automáticamente podcasts de YouTube en clips virales para TikTok.
@@ -35,7 +35,7 @@ Este repositorio contiene 4 workflows de n8n diseñados para automatizar diferen
 
 **Reducción de trabajo manual**: 80-95%
 
-### 2. 📊 Pipeline de Datos de Trading
+### 2. Pipeline de Datos de Trading
 **Archivo**: `workflows/trading-pipeline.json`
 
 **Función**: Descarga y enriquece datos OHLCV de Binance con indicadores técnicos.
@@ -56,7 +56,7 @@ Este repositorio contiene 4 workflows de n8n diseñados para automatizar diferen
 
 **Reducción de trabajo manual**: 60-80%
 
-### 3. 📈 Generador de Señales de Trading
+### 3. Generador de Señales de Trading
 **Archivo**: `workflows/trading-signals.json`
 
 **Función**: Genera señales de trading automáticas cada 15 minutos.
@@ -76,7 +76,7 @@ Este repositorio contiene 4 workflows de n8n diseñados para automatizar diferen
 
 **Reducción de trabajo manual**: 60-80%
 
-### 4. 🤖 Asistente de WhatsApp (SynapBot)
+### 4. Asistente de WhatsApp
 **Archivo**: `workflows/whatsapp-assistant.json`
 
 **Función**: Asistente inteligente para atención de leads y gestión de CRM.
@@ -99,7 +99,7 @@ Este repositorio contiene 4 workflows de n8n diseñados para automatizar diferen
 
 **Reducción de trabajo manual**: 50-70%
 
-## 🛠️ Configuración
+## Configuración
 
 ### Prerrequisitos
 - Cuenta de n8n (cloud o self-hosted)
@@ -127,7 +127,7 @@ Cada workflow requiere configurar las siguientes credenciales en n8n:
 - **Andynocode**: Edición de video
 - **Upload-Post**: Publicación en TikTok
 
-## 📁 Estructura del Repositorio
+## Estructura del Repositorio
 
 ```
 synaptek-workflows/
@@ -146,7 +146,7 @@ synaptek-workflows/
     └── configuration-examples/
 ```
 
-## 🔧 Personalización
+## Personalización
 
 ### Variables de Entorno
 Configura las siguientes variables según tu entorno:
@@ -177,7 +177,7 @@ GMAIL_CREDENTIALS=your_gmail_credentials
 - Plantillas de mensajes
 - Configuración de CRM
 
-## 📊 Métricas de Eficiencia
+## Métricas de Eficiencia
 
 | Workflow | Reducción Manual | Tiempo Ahorrado | ROI Estimado |
 |----------|------------------|-----------------|--------------|
@@ -186,7 +186,7 @@ GMAIL_CREDENTIALS=your_gmail_credentials
 | Señales Trading | 60-80% | 1-2 horas/día | Alto |
 | WhatsApp Assistant | 50-70% | 3-4 horas/día | Medio |
 
-## 🚨 Consideraciones Importantes
+## Consideraciones Importantes
 
 ### Seguridad
 - Nunca compartas credenciales en el código
@@ -203,7 +203,7 @@ GMAIL_CREDENTIALS=your_gmail_credentials
 - Respeta límites de rate limiting
 - Mantén backups de configuraciones
 
-## 🤝 Contribuciones
+## Contribuciones
 
 Las contribuciones son bienvenidas. Por favor:
 
@@ -213,18 +213,13 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la rama
 5. Abre un Pull Request
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
-## 📞 Soporte
 
-Para soporte técnico o preguntas:
-- Email: soporte@thesynaptek.com
-- Website: https://thesynaptek.com
-- LinkedIn: [Synaptek](https://www.linkedin.com/company/synaptek)
 
-## 🔄 Actualizaciones
+## Actualizaciones
 
 - **v1.0.0**: Versión inicial con 4 workflows principales
 - Próximas actualizaciones incluirán:
@@ -234,5 +229,5 @@ Para soporte técnico o preguntas:
 
 ---
 
-**Desarrollado por Synaptek** - Transformando empresas con automatización inteligente 🤖
+**Desarrollado por Luis Klepatzky** 
 
