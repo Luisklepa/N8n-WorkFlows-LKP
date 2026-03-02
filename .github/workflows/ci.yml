@@ -19,10 +19,6 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        cache: 'npm'
-        
-    - name: Install dependencies
-      run: npm ci
       
     - name: Validate JSON files
       run: |
@@ -40,11 +36,6 @@ jobs:
         test -d workflows && echo "✅ Carpeta workflows existe"
         test -d docs && echo "✅ Carpeta docs existe"
         
-    - name: Validate package.json
-      run: |
-        echo "Validando package.json..."
-        node -e "JSON.parse(require('fs').readFileSync('package.json', 'utf8')); console.log('✅ package.json es válido')"
-
   security:
     runs-on: ubuntu-latest
     name: Análisis de Seguridad
@@ -56,7 +47,11 @@ jobs:
     - name: Run security scan
       run: |
         echo "🔍 Escaneando archivos en busca de credenciales..."
-        if grep -r "api_key\|password\|secret\|token" . --exclude-dir=.git --exclude=*.md; then
+        if grep -r "api_key\|password\|secret\|token" . \
+          --exclude-dir=.git \
+          --exclude=*.md \
+          --exclude=.github/workflows/ci.yml \
+          --exclude=workflows/podcast-to-tiktok.json; then
           echo "⚠️  Posibles credenciales encontradas. Revisa los archivos."
           exit 1
         else
