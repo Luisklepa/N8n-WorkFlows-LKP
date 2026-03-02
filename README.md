@@ -2,6 +2,8 @@
 
 Colección de workflows de n8n para automatización de procesos empresariales, generación de contenido y análisis de trading.
 
+_Collection of n8n workflows for business process automation, content generation and trading / data pipelines. Useful to showcase **lightweight ETL, automation and alerting** skills for Data / BI contexts._
+
 ## Descripción General
 
 Este repositorio contiene 4 workflows de n8n diseñados para automatizar diferentes procesos:
