@@ -15,17 +15,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-      
     - name: Validate JSON files
       run: |
         echo "Validando archivos JSON..."
         for file in workflows/*.json; do
           echo "Validando $file"
-          node -e "JSON.parse(require('fs').readFileSync('$file', 'utf8')); console.log('✅ $file es válido')"
+          python -m json.tool "$file" > /dev/null
+          echo "✅ $file es válido"
         done
         
     - name: Check file structure
