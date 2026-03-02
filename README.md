@@ -11,6 +11,17 @@ Este repositorio contiene 4 workflows de n8n diseñados para automatizar diferen
 3. **Generador de Señales de Trading** - Sistema de alertas automáticas
 4. **Asistente de WhatsApp (SynapBot)** - CRM y atención automatizada de leads
 
+## Casos de uso analíticos / BI
+
+Aun cuando varios workflows están orientados a contenido y trading, este repositorio también es relevante para **roles de Data / BI** porque:
+
+- Los pipelines de datos de trading muestran cómo **automatizar ETL ligero** (extracción de datos, enriquecimiento con indicadores, exportación para análisis).
+- Los workflows de señales y WhatsApp demuestran integración con **Google Sheets** como mini data mart y **alertas basadas en datos** (similar a alertas de KPIs).
+- El enfoque se puede trasladar fácilmente a casos típicos de BI:
+  - Actualizar datasets de ventas diariamente.
+  - Enviar notificaciones cuando un KPI se sale de un umbral.
+  - Sincronizar leads/clientes entre sistemas (CRM, hojas de cálculo, etc.).
+
 ##  Workflows Incluidos
 
 ### 1. Transform Podcasts into Viral TikTok Clips
